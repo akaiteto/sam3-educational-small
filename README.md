@@ -1,12 +1,12 @@
-# mini SAM 3（仕組みを学ぶための小さなSAM 3）
+# sam3-educational-small（仕組みを学ぶための、規模を縮めたSAM 3）
 
 SAM 3 の画像用の検出器（公式 [facebookresearch/sam3](https://github.com/facebookresearch/sam3) の `Sam3Image`）を、論文（arXiv:2511.16719、特に付録C）の記述に合わせて、CPUで20分ほどで学習できる大きさに書き直したものです。実用性はありません。本物の重みも使いません。
 
 ## 動かし方（Windows PowerShell の例）
 
 ```
-git clone https://github.com/akaiteto/mini-sam3.git
-cd mini-sam3
+git clone https://github.com/akaiteto/sam3-educational-small.git
+cd sam3-educational-small
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 .\.venv\Scripts\python.exe -m pip install numpy scipy matplotlib
